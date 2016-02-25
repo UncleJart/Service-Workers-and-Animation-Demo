@@ -1,0 +1,8 @@
+body{
+	min-width: 240px;
+}
+
+.animation-container{
+	width: 100vw;
+	height: 100vh;
+}
