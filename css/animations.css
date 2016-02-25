@@ -1,0 +1,45 @@
+@media screen and (orientation: landscape){
+	@keyframes moveAndRotateFront{
+		from{
+			transform: translateX(0) translateY(-8vh) rotate3d(0,1,0,0deg);
+		}
+
+		25%{
+			transform: translateX(-31vw) translateY(8vh) rotate3d(0,1,0,360deg);
+		}
+
+		50%{
+			transform: translateX(-62vw) translateY(-8vh) rotate3d(0,1,0,720deg);
+		}
+
+		75%{
+			transform: translateX(-93vw) translateY(8vh) rotate3d(0,1,0,1080deg);
+		}
+
+		to{
+			transform: translateX(-125vw) translateY(-8vh) rotate3d(0,1,0,1440deg);
+		}
+	}
+
+	@keyframes moveAndRotateBack {
+		from {
+			transform: translateX(0) translateY(-8vh) rotate3d(0, 1, 0, 180deg);
+		}
+
+		25% {
+			transform: translateX(-31vw) translateY(8vh) rotate3d(0, 1, 0, 540deg);
+		}
+
+		50% {
+			transform: translateX(-62vw) translateY(-8vh) rotate3d(0, 1, 0, 900deg);
+		}
+
+		75% {
+			transform: translateX(-93vw) translateY(8vh) rotate3d(0, 1, 0, 1260deg);
+		}
+
+		to {
+			transform: translateX(-125vw) translateY(-8vh) rotate3d(0, 1, 0, 1620deg);
+		}
+	}
+}

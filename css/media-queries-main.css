@@ -1,111 +1,189 @@
-@media screen and (max-width: 240px) and (orientation: portrait){
+@media screen and (orientation: portrait){
 
-	.animation-container{
-		background: url("../img/backgrounds/portrait/background_240x320.jpg") 0/cover no-repeat;
+	@media (max-width: 240px){
+
+		.animation-container{
+			background: url("../img/backgrounds/portrait/background_240x320.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 241px) and (max-width: 480px){
+
+		.animation-container{
+			background: url("../img/backgrounds/portrait/background_480x640.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 481px) and (max-width: 720px){
+
+		.animation-container{
+			background: url("../img/backgrounds/portrait/background_720x960.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 721px) and (max-width: 960px){
+
+		.animation-container{
+			background: url("../img/backgrounds/portrait/background_960x1280.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 961px) and (max-width: 1440px){
+
+		.animation-container{
+			background: url("../img/backgrounds/portrait/background_1440x1920.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 1441px) and (max-width: 1680px){
+
+		.animation-container{
+			background: url("../img/backgrounds/portrait/background_1680x2240.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 1681px){
+
+		.animation-container{
+			background: url("../img/backgrounds/portrait/background_1920x2560.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	.motherboard-front,
+	.motherboard-back{
+		transform: rotate(90deg);
+	}
+
+	.anim-el-outer-wrapper{
+		perspective: 150vh;
 	}
 
 }
 
-@media screen and (min-width: 241px) and (max-width: 480px) and (orientation: portrait){
+@media screen and (orientation: landscape){
 
-	.animation-container{
-		background: url("../img/backgrounds/portrait/background_480x640.jpg") 0/cover no-repeat;
+	@media (max-width: 320px){
+
+		.animation-container{
+			background: url("../img/backgrounds/landscape/background_320x240.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 321px) and (max-width: 640px){
+
+		.animation-container{
+			background: url("../img/backgrounds/landscape/background_640x480.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 641px) and (max-width: 960px){
+
+		.animation-container{
+			background: url("../img/backgrounds/landscape/background_960x720.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 961px) and (max-width: 1280px){
+
+		.animation-container{
+			background: url("../img/backgrounds/landscape/background_1280x960.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 1281px) and (max-width: 1920px){
+
+		.animation-container{
+			background: url("../img/backgrounds/landscape/background_1920x1440.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 1921px) and (max-width: 2240px){
+
+		.animation-container{
+			background: url("../img/backgrounds/landscape/background_2240x1680.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	@media (min-width: 2241px){
+
+		.animation-container{
+			background: url("../img/backgrounds/landscape/background_2560x1920.jpg") center/cover no-repeat;
+		}
+
+	}
+
+	.motherboard-front,
+	.motherboard-back{
+		top: 8vh;
+		left: 100vw;
+	}
+
+	.anim-el-outer-wrapper{
+		perspective: 150vw;
 	}
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 720px) and (orientation: portrait){
+@media screen and (orientation: portrait) and (max-width: 479px),
+		(orientation: landscape) and (max-width: 639px){
 
-	.animation-container{
-		background: url("../img/backgrounds/portrait/background_720x960.jpg") 0/cover no-repeat;
+	.motherboard-front{
+		background: url("../img/motherboard/motherboard_front_80.png") center/contain no-repeat;
+	}
+
+	.motherboard-back{
+		background: url("../img/motherboard/motherboard_back_80.png") center/contain no-repeat;
+	}
+}
+
+@media screen and (orientation: portrait) and (min-width:480px) and (max-width: 959px),
+		(orientation: landscape) and (min-width: 640px) and (max-width: 1279px){
+
+	.motherboard-front{
+		background: url("../img/motherboard/motherboard_front_160.png") center/contain no-repeat;
+	}
+
+	.motherboard-back{
+		background: url("../img/motherboard/motherboard_back_160.png") center/contain no-repeat;
 	}
 
 }
 
-@media screen and (min-width: 721px) and (max-width: 960px) and (orientation: portrait){
+@media screen and (orientation: portrait) and (min-width: 960px) and (max-width: 1679px),
+		(orientation: landscape) and (min-width: 1280px) and (max-width: 2239px){
 
-	.animation-container{
-		background: url("../img/backgrounds/portrait/background_960x1280.jpg") 0/cover no-repeat;
+	.motherboard-front{
+		background: url("../img/motherboard/motherboard_front_320.png") center/contain no-repeat;
+	}
+
+	.motherboard-back{
+		background: url("../img/motherboard/motherboard_back_320.png") center/contain no-repeat;
 	}
 
 }
 
-@media screen and (min-width: 961px) and (max-width: 1440px) and (orientation: portrait){
+@media screen and (orientation: portrait) and (min-width: 1680px),
+		(orientation: landscape) and (min-width: 2240px){
 
-	.animation-container{
-		background: url("../img/backgrounds/portrait/background_1440x1920.jpg") 0/cover no-repeat;
+	.motherboard-front{
+		background: url("../img/motherboard/motherboard_front_640.png") center/contain no-repeat;
 	}
 
-}
-
-@media screen and (min-width: 1441px) and (max-width: 1680px) and (orientation: portrait){
-
-	.animation-container{
-		background: url("../img/backgrounds/portrait/background_1680x2240.jpg") 0/cover no-repeat;
-	}
-
-}
-
-@media screen and (min-width: 1681px) and (orientation: portrait){
-
-	.animation-container{
-		background: url("../img/backgrounds/portrait/background_1920x2560.jpg") 0/cover no-repeat;
-	}
-
-}
-
-@media screen and (max-width: 320px) and (orientation: landscape){
-
-	.animation-container{
-		background: url("../img/backgrounds/landscape/background_320x240.jpg") 0/cover no-repeat;
-	}
-
-}
-
-@media screen and (min-width: 321px) and (max-width: 640px) and (orientation: landscape){
-
-	.animation-container{
-		background: url("../img/backgrounds/landscape/background_640x480.jpg") 0/cover no-repeat;
-	}
-
-}
-
-@media screen and (min-width: 641px) and (max-width: 960px) and (orientation: landscape){
-
-	.animation-container{
-		background: url("../img/backgrounds/landscape/background_960x720.jpg") 0/cover no-repeat;
-	}
-
-}
-
-@media screen and (min-width: 961px) and (max-width: 1280px) and (orientation: landscape){
-
-	.animation-container{
-		background: url("../img/backgrounds/landscape/background_1280x960.jpg") 0/cover no-repeat;
-	}
-
-}
-
-@media screen and (min-width: 1281px) and (max-width: 1920px) and (orientation: landscape){
-
-	.animation-container{
-		background: url("../img/backgrounds/landscape/background_1920x1440.jpg") 0/cover no-repeat;
-	}
-
-}
-
-@media screen and (min-width: 1921px) and (max-width: 2240px) and (orientation: landscape){
-
-	.animation-container{
-		background: url("../img/backgrounds/landscape/background_2240x1680.jpg") 0/cover no-repeat;
-	}
-
-}
-
-@media screen and (min-width: 2241px) and (orientation: landscape){
-
-	.animation-container{
-		background: url("../img/backgrounds/landscape/background_2560x1920.jpg") 0/cover no-repeat;
+	.motherboard-back{
+		background: url("../img/motherboard/motherboard_back_640.png") center/contain no-repeat;
 	}
 
 }

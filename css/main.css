@@ -5,4 +5,25 @@ body{
 .animation-container{
 	width: 100vw;
 	height: 100vh;
+	position: relative;
+}
+
+.motherboard-front{
+	position: absolute;
+	width: 25vw;
+	height: 30vh;
+	animation: moveAndRotateFront 5s linear infinite;
+	backface-visibility: hidden;
+}
+
+.motherboard-back{
+	position: absolute;
+	width: 25vw;
+	height: 30vh;
+	animation: moveAndRotateBack 5s linear infinite;
+	backface-visibility: hidden;
+}
+
+.anim-el-inner-wrapper{
+	transform-style: preserve-3d;
 }
