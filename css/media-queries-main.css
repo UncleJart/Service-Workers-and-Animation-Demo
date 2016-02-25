@@ -61,6 +61,12 @@
 		transform: rotate(90deg);
 	}
 
+	.motherboard-front,
+	.motherboard-back{
+		right: 8vh;
+		top: 100vw;
+	}
+
 	.anim-el-outer-wrapper{
 		perspective: 150vh;
 	}
