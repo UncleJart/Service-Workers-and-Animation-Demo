@@ -8,20 +8,34 @@ body{
 	position: relative;
 }
 
-.motherboard-front{
+.motherboard-front-wrapper,
+.motherboard-back-wrapper,
+.videocard-front-wrapper,
+.videocard-back-wrapper{
 	position: absolute;
-	width: 25vw;
-	height: 30vh;
-	animation: moveAndRotateFront 5s linear infinite;
+}
+
+.motherboard-front,
+.motherboard-back,
+.videocard-front,
+.videocard-back{
 	backface-visibility: hidden;
 }
 
+.motherboard-front{
+	animation: moveAndRotateMotherboardFront 5s linear infinite;
+}
+
 .motherboard-back{
-	position: absolute;
-	width: 25vw;
-	height: 30vh;
-	animation: moveAndRotateBack 5s linear infinite;
-	backface-visibility: hidden;
+	animation: moveAndRotateMotherboardBack 5s linear infinite;
+}
+
+.videocard-front{
+	animation: moveAndRotateVideocardFront 5s linear infinite;
+}
+
+.videocard-back{
+	animation: moveAndRotateVideocardBack 5s linear infinite;
 }
 
 .anim-el-inner-wrapper{

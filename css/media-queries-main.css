@@ -56,15 +56,28 @@
 
 	}
 
-	.motherboard-front,
-	.motherboard-back{
-		transform: rotate(90deg);
+	.motherboard-front-wrapper,
+	.motherboard-back-wrapper{
+		right: 14vw;
+		top: 100vh;
 	}
 
 	.motherboard-front,
 	.motherboard-back{
-		right: 8vh;
-		top: 100vw;
+		width: 20vw;
+		height: 18vh;
+	}
+
+	.videocard-front-wrapper,
+	.videocard-back-wrapper{
+		left: 4vw;
+		top: -33vh;
+	}
+
+	.videocard-front,
+	.videocard-back{
+		width: 27vh;
+		height: 36vw;
 	}
 
 	.anim-el-outer-wrapper{
@@ -131,10 +144,28 @@
 
 	}
 
+	.motherboard-front-wrapper,
+	.motherboard-back-wrapper{
+		top: 12vh;
+		left: 100vw;
+	}
+
 	.motherboard-front,
 	.motherboard-back{
-		top: 8vh;
-		left: 100vw;
+		width: 16vw;
+		height: 25vh;
+	}
+
+	.videocard-front-wrapper,
+	.videocard-back-wrapper{
+		bottom: 12vh;
+		left: -33vw;
+	}
+
+	.videocard-front,
+	.videocard-back{
+		width: 33vw;
+		height: 25vh;
 	}
 
 	.anim-el-outer-wrapper{
@@ -143,53 +174,63 @@
 
 }
 
-@media screen and (orientation: portrait) and (max-width: 479px),
-		(orientation: landscape) and (max-width: 639px){
+@media screen and (orientation: portrait) and (max-width: 480px),
+		(orientation: landscape) and (max-width: 640px){
 
 	.motherboard-front{
-		background: url("../img/motherboard/motherboard_front_80.png") center/contain no-repeat;
+		background: url("../img/motherboard/motherboard_front_100x120.png") center/contain no-repeat;
 	}
 
 	.motherboard-back{
-		background: url("../img/motherboard/motherboard_back_80.png") center/contain no-repeat;
+		background: url("../img/motherboard/motherboard_back_100x120.png") center/contain no-repeat;
+	}
+
+	.videocard-front{
+		background: url("../img/videocard/videocard_front_214x120.png") center/contain no-repeat;
+	}
+
+	.videocard-back{
+		background: url("../img/videocard/videocard_back_214x120.png") center/contain no-repeat;
 	}
 }
 
-@media screen and (orientation: portrait) and (min-width:480px) and (max-width: 959px),
-		(orientation: landscape) and (min-width: 640px) and (max-width: 1279px){
+@media screen and (orientation: portrait) and (min-width:481px) and (max-width: 960px),
+		(orientation: landscape) and (min-width: 641px) and (max-width: 1280px){
 
 	.motherboard-front{
-		background: url("../img/motherboard/motherboard_front_160.png") center/contain no-repeat;
+		background: url("../img/motherboard/motherboard_front_200x240.png") center/contain no-repeat;
 	}
 
 	.motherboard-back{
-		background: url("../img/motherboard/motherboard_back_160.png") center/contain no-repeat;
+		background: url("../img/motherboard/motherboard_back_200x240.png") center/contain no-repeat;
 	}
 
+	.videocard-front{
+		background: url("../img/videocard/videocard_front_427x240.png") center/contain no-repeat;
+	}
+
+	.videocard-back{
+		background: url("../img/videocard/videocard_back_427x240.png") center/contain no-repeat;
+	}
 }
 
-@media screen and (orientation: portrait) and (min-width: 960px) and (max-width: 1679px),
-		(orientation: landscape) and (min-width: 1280px) and (max-width: 2239px){
+@media screen and (orientation: portrait) and (min-width: 961px),
+		(orientation: landscape) and (min-width: 1281px){
 
 	.motherboard-front{
-		background: url("../img/motherboard/motherboard_front_320.png") center/contain no-repeat;
+		background: url("../img/motherboard/motherboard_front_400x480.png") center/contain no-repeat;
 	}
 
 	.motherboard-back{
-		background: url("../img/motherboard/motherboard_back_320.png") center/contain no-repeat;
+		background: url("../img/motherboard/motherboard_back_400x480.png") center/contain no-repeat;
 	}
 
-}
-
-@media screen and (orientation: portrait) and (min-width: 1680px),
-		(orientation: landscape) and (min-width: 2240px){
-
-	.motherboard-front{
-		background: url("../img/motherboard/motherboard_front_640.png") center/contain no-repeat;
+	.videocard-front{
+		background: url("../img/videocard/videocard_front_854x480.png") center/contain no-repeat;
 	}
 
-	.motherboard-back{
-		background: url("../img/motherboard/motherboard_back_640.png") center/contain no-repeat;
+	.videocard-back{
+		background: url("../img/videocard/videocard_back_854x480.png") center/contain no-repeat;
 	}
 
 }

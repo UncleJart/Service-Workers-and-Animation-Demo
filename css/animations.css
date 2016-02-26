@@ -1,91 +1,179 @@
 @media screen and (orientation: landscape){
-	@keyframes moveAndRotateFront{
+	@keyframes moveAndRotateMotherboardFront{
 		from{
-			transform: translateX(0) translateY(-8vh) rotate3d(0,1,0,0deg);
+			transform: translateX(0) translateY(-12vh) rotate3d(0,1,0,0deg);
 		}
 
 		25%{
-			transform: translateX(-31vw) translateY(8vh) rotate3d(0,1,0,360deg);
+			transform: translateX(-31vw) translateY(12vh) rotate3d(0,1,0,360deg);
 		}
 
 		50%{
-			transform: translateX(-62vw) translateY(-8vh) rotate3d(0,1,0,720deg);
+			transform: translateX(-62vw) translateY(-12vh) rotate3d(0,1,0,720deg);
 		}
 
 		75%{
-			transform: translateX(-93vw) translateY(8vh) rotate3d(0,1,0,1080deg);
+			transform: translateX(-93vw) translateY(12vh) rotate3d(0,1,0,1080deg);
 		}
 
 		to{
-			transform: translateX(-125vw) translateY(-8vh) rotate3d(0,1,0,1440deg);
+			transform: translateX(-125vw) translateY(-12vh) rotate3d(0,1,0,1440deg);
 		}
 	}
 
-	@keyframes moveAndRotateBack {
+	@keyframes moveAndRotateMotherboardBack {
 		from {
-			transform: translateX(0) translateY(-8vh) rotate3d(0, 1, 0, 180deg);
+			transform: translateX(0) translateY(-12vh) rotate3d(0,1,0,180deg);
 		}
 
 		25% {
-			transform: translateX(-31vw) translateY(8vh) rotate3d(0, 1, 0, 540deg);
+			transform: translateX(-31vw) translateY(12vh) rotate3d(0,1,0,540deg);
 		}
 
 		50% {
-			transform: translateX(-62vw) translateY(-8vh) rotate3d(0, 1, 0, 900deg);
+			transform: translateX(-62vw) translateY(-12vh) rotate3d(0,1,0,900deg);
 		}
 
 		75% {
-			transform: translateX(-93vw) translateY(8vh) rotate3d(0, 1, 0, 1260deg);
+			transform: translateX(-93vw) translateY(12vh) rotate3d(0,1,0,1260deg);
 		}
 
 		to {
-			transform: translateX(-125vw) translateY(-8vh) rotate3d(0, 1, 0, 1620deg);
+			transform: translateX(-125vw) translateY(-12vh) rotate3d(0,1,0,1620deg);
+		}
+	}
+
+	@keyframes moveAndRotateVideocardFront{
+		from{
+			transform: translateX(0vw) translateY(-12vh) rotate3d(0,1,0,0deg);
+		}
+
+		25%{
+			transform: translateX(34vw) translateY(12vh) rotate3d(0,1,0,-360deg);
+		}
+
+		50%{
+			transform: translateX(68vw) translateY(-12vh) rotate3d(0,1,0,-720deg);
+		}
+
+		75%{
+			transform: translateX(102vw) translateY(12vh) rotate3d(0,1,0,-1080deg);
+		}
+
+		to{
+			transform: translateX(136vw) translateY(-12vh) rotate3d(0,1,0,-1440deg);
+		}
+	}
+
+	@keyframes moveAndRotateVideocardBack {
+		from {
+			transform: translateX(0vw) translateY(-12vh) rotate3d(0,1,0,-180deg);
+		}
+
+		25% {
+			transform: translateX(34vw) translateY(12vh) rotate3d(0,1,0,-540deg);
+		}
+
+		50% {
+			transform: translateX(68vw) translateY(-12vh) rotate3d(0,1,0,-900deg);
+		}
+
+		75% {
+			transform: translateX(102vw) translateY(12vh) rotate3d(0,1,0,-1260deg);
+		}
+
+		to {
+			transform: translateX(134vw) translateY(-12vh) rotate3d(0,1,0,-1620deg);
 		}
 	}
 }
 
 @media screen and (orientation: portrait){
-	@keyframes moveAndRotateFront{
+	@keyframes moveAndRotateMotherboardFront{
 		from{
-			transform: translateY(0) translateX(-8vh) rotate(90deg) rotate3d(1,0,0,0deg);
+			transform: translateY(0) translateX(-12vw) rotate3d(1,0,0,0deg) rotate(90deg);
 		}
 
-		/*25%{
-			transform: translateX(-31vw) translateY(8vh) rotate3d(0,1,0,360deg);
+		25%{
+			transform: translateY(-31vh) translateX(12vw) rotate3d(1,0,0,360deg) rotate(90deg);
 		}
 
 		50%{
-			transform: translateX(-62vw) translateY(-8vh) rotate3d(0,1,0,720deg);
+			transform: translateY(-62vh) translateX(-12vw) rotate3d(1,0,0,720deg) rotate(90deg);
 		}
 
 		75%{
-			transform: translateX(-93vw) translateY(8vh) rotate3d(0,1,0,1080deg);
-		}*/
+			transform: translateY(-93vh) translateX(12vw) rotate3d(1,0,0,1080deg) rotate(90deg);
+		}
 
 		to{
-			transform: translateY(-125vh) translateY(-8vw) rotate3d(1,0,0,1440deg);
+			transform: translateY(-125vh) translateX(-12vw) rotate3d(1,0,0,1440deg) rotate(90deg);
 		}
 	}
 
-	@keyframes moveAndRotateBack {
+	@keyframes moveAndRotateMotherboardBack {
+		from{
+			transform: translateY(0) translateX(-12vw) rotate3d(1,0,0,180deg) rotate(90deg);
+		}
+
+		25%{
+			transform: translateY(-31vh) translateX(12vw) rotate3d(1,0,0,540deg) rotate(90deg);
+		}
+
+		50%{
+			transform: translateY(-62vh) translateX(-12vw) rotate3d(1,0,0,900deg) rotate(90deg);
+		}
+
+		75%{
+			transform: translateY(-93vh) translateX(12vw) rotate3d(1,0,0,1260deg) rotate(90deg);
+		}
+
+		to{
+			transform: translateY(-125vh) translateX(-12vw) rotate3d(1,0,0,1620deg) rotate(90deg);
+		}
+	}
+
+	@keyframes moveAndRotateVideocardFront{
+		from{
+			transform: translateY(0vh) translateX(-12vw) rotate3d(1,0,0,0deg) rotate(90deg);
+		}
+
+		25%{
+			transform: translateY(34vh) translateX(12vw) rotate3d(1,0,0,-360deg) rotate(90deg);
+		}
+
+		50%{
+			transform: translateY(68vh) translateX(-12vw) rotate3d(1,0,0,-720deg) rotate(90deg);
+		}
+
+		75%{
+			transform: translateY(102vh) translateX(12vw) rotate3d(1,0,0,-1080deg) rotate(90deg);
+		}
+
+		to{
+			transform: translateY(136vh) translateX(-12vw) rotate3d(1,0,0,-1440deg) rotate(90deg);
+		}
+	}
+
+	@keyframes moveAndRotateVideocardBack {
 		from {
-			transform: translateX(0) translateY(-8vh) rotate(90deg) rotate3d(0, 1, 0, 180deg);
+			transform: translateY(0vh) translateX(-12vw) rotate3d(1,0,0,-180deg) rotate(90deg);
 		}
 
 		25% {
-			transform: translateX(-31vw) translateY(8vh) rotate3d(0, 1, 0, 540deg);
+			transform: translateY(34vh) translateX(12vw) rotate3d(1,0,0,-540deg) rotate(90deg);
 		}
 
 		50% {
-			transform: translateX(-62vw) translateY(-8vh) rotate3d(0, 1, 0, 900deg);
+			transform: translateY(68vh) translateX(-12vw) rotate3d(1,0,0,-900deg) rotate(90deg);
 		}
 
 		75% {
-			transform: translateX(-93vw) translateY(8vh) rotate3d(0, 1, 0, 1260deg);
+			transform: translateY(102vh) translateX(12vw) rotate3d(1,0,0,-1260deg) rotate(90deg);
 		}
 
 		to {
-			transform: translateX(-125vw) translateY(-8vh) rotate3d(0, 1, 0, 1620deg);
+			transform: translateY(134vh) translateX(-12vw) rotate3d(1,0,0,-1620deg) rotate(90deg);
 		}
 	}
 }
