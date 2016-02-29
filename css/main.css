@@ -8,36 +8,60 @@ body{
 	position: relative;
 }
 
-.motherboard-front-wrapper,
-.motherboard-back-wrapper,
-.videocard-front-wrapper,
-.videocard-back-wrapper{
+.anim-el-outer-wrapper{
 	position: absolute;
-}
-
-.motherboard-front,
-.motherboard-back,
-.videocard-front,
-.videocard-back{
-	backface-visibility: hidden;
-}
-
-.motherboard-front{
-	animation: moveAndRotateMotherboardFront 5s linear infinite;
-}
-
-.motherboard-back{
-	animation: moveAndRotateMotherboardBack 5s linear infinite;
-}
-
-.videocard-front{
-	animation: moveAndRotateVideocardFront 5s linear infinite;
-}
-
-.videocard-back{
-	animation: moveAndRotateVideocardBack 5s linear infinite;
 }
 
 .anim-el-inner-wrapper{
 	transform-style: preserve-3d;
+}
+
+.animated-element{
+	backface-visibility: hidden;
+}
+
+.motherboard-front{
+	animation: moveAndRotateMotherboardFront 5s 1s linear infinite;
+}
+
+.motherboard-back{
+	animation: moveAndRotateMotherboardBack 5s 1s linear infinite;
+}
+
+.videocard-front{
+	animation: moveAndRotateVideocardFront 5s 1s linear infinite;
+}
+
+.videocard-back{
+	animation: moveAndRotateVideocardBack 5s 1s linear infinite;
+}
+
+.cpu-front{
+	display: flex;
+	animation: CPUReveal 1s linear,
+				CPUFrontRotateAndScale 2.5s 1s linear infinite;
+}
+
+.cpu-back{
+	transform: rotateY(180deg);
+	animation: CPUBackRotateAndScale 2.5s 1s linear infinite;
+}
+
+.glow{
+	width: 100%;
+	height: 100%;
+	border-radius: 5%;
+	box-shadow:
+	0 0 10vw rgba(221,223,24,.2),
+	-0 -0 10vw rgba(221,223,24,.2),
+	inset 0 0 30vw rgba(221,223,24,.2),
+	inset -0 -0 30vw rgba(221,223,24,.2);
+}
+
+.white-glow{
+	box-shadow:
+	0 0 10vw rgba(255,255,255,.35),
+	-0 -0 10vw rgba(255,255,255,.35),
+	inset 0 0 30vw rgba(255,255,255,.35),
+	inset -0 -0 30vw rgba(255,255,255,.35);
 }

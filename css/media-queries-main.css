@@ -80,6 +80,18 @@
 		height: 36vw;
 	}
 
+	.cpu-front-wrapper,
+	.cpu-back-wrapper{
+		top: 42vh;
+		left: 42vw;
+	}
+
+	.cpu-front,
+	.cpu-back{
+		width: 15vw;
+		height: 14vh;
+	}
+
 	.anim-el-outer-wrapper{
 		perspective: 150vh;
 	}
@@ -168,6 +180,18 @@
 		height: 25vh;
 	}
 
+	.cpu-front-wrapper,
+	.cpu-back-wrapper{
+		top: 41vh;
+		left: 44vw;
+	}
+
+	.cpu-front,
+	.cpu-back{
+		width: 12vw;
+		height: 18vh;
+	}
+
 	.anim-el-outer-wrapper{
 		perspective: 150vw;
 	}
@@ -192,6 +216,14 @@
 	.videocard-back{
 		background: url("../img/videocard/videocard_back_214x120.png") center/contain no-repeat;
 	}
+
+	.cpu-front{
+		background: url("../img/cpu/cpu_front_74x86.png") center/contain no-repeat;
+	}
+
+	.cpu-back{
+		background: url("../img/cpu/cpu_back_74x86.png") center/contain no-repeat;
+	}
 }
 
 @media screen and (orientation: portrait) and (min-width:481px) and (max-width: 960px),
@@ -211,6 +243,14 @@
 
 	.videocard-back{
 		background: url("../img/videocard/videocard_back_427x240.png") center/contain no-repeat;
+	}
+
+	.cpu-front{
+		background: url("../img/cpu/cpu_front_148x172.png") center/contain no-repeat;
+	}
+
+	.cpu-back{
+		background: url("../img/cpu/cpu_back_148x172.png") center/contain no-repeat;
 	}
 }
 
@@ -233,4 +273,11 @@
 		background: url("../img/videocard/videocard_back_854x480.png") center/contain no-repeat;
 	}
 
+	.cpu-front{
+		background: url("../img/cpu/cpu_front_296x344.png") center/contain no-repeat;
+	}
+
+	.cpu-back{
+		background: url("../img/cpu/cpu_back_296x344.png") center/contain no-repeat;
+	}
 }
