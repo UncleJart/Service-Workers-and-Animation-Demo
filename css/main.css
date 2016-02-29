@@ -21,30 +21,73 @@ body{
 }
 
 .motherboard-front{
-	animation: moveAndRotateMotherboardFront 5s 1s linear infinite;
+	animation: moveAndRotateMotherboardFront 6s linear 1s,
+				moveAndRotateMotherboardFront 6s linear 7s reverse;
 }
 
 .motherboard-back{
-	animation: moveAndRotateMotherboardBack 5s 1s linear infinite;
+	animation: moveAndRotateMotherboardBack 6s linear 1s,
+				moveAndRotateMotherboardBack 6s linear 7s reverse;
 }
 
 .videocard-front{
-	animation: moveAndRotateVideocardFront 5s 1s linear infinite;
+	animation: moveAndRotateVideocardFront 6s linear 1s,
+				moveAndRotateVideocardFront 6s linear 7s reverse;
 }
 
 .videocard-back{
-	animation: moveAndRotateVideocardBack 5s 1s linear infinite;
+	animation: moveAndRotateVideocardBack 6s linear 1s,
+				moveAndRotateVideocardBack 6s linear 7s reverse;
 }
 
 .cpu-front{
 	display: flex;
 	animation: CPUReveal 1s linear,
-				CPUFrontRotateAndScale 2.5s 1s linear infinite;
+				CPUFrontRotateAndScale 2.5s linear 1s infinite;
 }
 
 .cpu-back{
 	transform: rotateY(180deg);
-	animation: CPUBackRotateAndScale 2.5s 1s linear infinite;
+	animation: CPUBackRotateAndScale 2.5s linear 1s infinite;
+}
+
+.cd-back,
+.cd-front{
+	border-radius: 50%;
+}
+
+.cd1-front,
+.cd5-front{
+	animation: CDFrontMoveAndRotate 5s linear 1s,
+				CDFrontMoveAndRotate 5s linear 6s reverse;
+}
+
+.cd2-front,
+.cd4-front{
+	animation: CDFrontMoveAndRotate 5s linear 1.5s,
+	CDFrontMoveAndRotate 5s linear 6.5s reverse;
+}
+
+.cd3-front{
+	animation: CDFrontMoveAndRotate 5s linear 2s,
+	CDFrontMoveAndRotate 5s linear 7s reverse;
+}
+
+.cd1-back,
+.cd5-back{
+	animation: CDBackMoveAndRotate 5s linear 1s,
+	CDBackMoveAndRotate 5s linear 6s reverse;
+}
+
+.cd2-back,
+.cd4-back{
+	animation: CDBackMoveAndRotate 5s linear 1.5s,
+	CDBackMoveAndRotate 5s linear 6.5s reverse;
+}
+
+.cd3-back{
+	animation: CDBackMoveAndRotate 5s linear 2s,
+	CDBackMoveAndRotate 5s linear 7s reverse;
 }
 
 .glow{
@@ -64,4 +107,13 @@ body{
 	-0 -0 10vw rgba(255,255,255,.35),
 	inset 0 0 30vw rgba(255,255,255,.35),
 	inset -0 -0 30vw rgba(255,255,255,.35);
+}
+
+.red-glow{
+	border-radius: 50%;
+	box-shadow:
+	0 0 10vw rgba(255,0,0,.2),
+	-0 -0 10vw rgba(255,0,0,.2),
+	inset 0 0 30vw rgba(255,0,0,.2),
+	inset -0 -0 30vw rgba(255,0,0,.2);
 }

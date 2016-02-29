@@ -92,6 +92,42 @@
 		height: 14vh;
 	}
 
+	.cd1-wrapper{
+		right: -20vw;
+		top: 0;
+	}
+
+	.cd2-wrapper{
+		right: -20vw;
+		top: 23.125vh;
+	}
+
+	.cd3-wrapper{
+		right: -20vw;
+		top: 46.25vh;
+	}
+
+	.cd4-wrapper{
+		right: -20vw;
+		top: 69.375vh;
+	}
+
+	.cd5-wrapper{
+		right: -20vw;
+		top: 92.5vh;
+	}
+
+
+	.cd-back{
+		width: 10vw;
+		height: 7.5vh;
+	}
+
+	.cd-front{
+		width: 10vw;
+		height: 7.5vh
+	}
+
 	.anim-el-outer-wrapper{
 		perspective: 150vh;
 	}
@@ -192,6 +228,41 @@
 		height: 18vh;
 	}
 
+	.cd1-wrapper{
+		top: -20vh;
+		left: 0;
+	}
+
+	.cd2-wrapper{
+		top: -20vh;
+		left: 23.125vw;
+	}
+
+	.cd3-wrapper{
+		top: -20vh;
+		left: 46.25vw;
+	}
+
+	.cd4-wrapper{
+		top: -20vh;
+		left: 69.375vw;
+	}
+
+	.cd5-wrapper{
+		top: -20vh;
+		left: 92.5vw;
+	}
+
+	.cd-back{
+		width: 7.5vw;
+		height: 10vh;
+	}
+
+	.cd-front{
+		width: 7.5vw;
+		height: 10vh
+	}
+
 	.anim-el-outer-wrapper{
 		perspective: 150vw;
 	}
@@ -224,6 +295,30 @@
 	.cpu-back{
 		background: url("../img/cpu/cpu_back_74x86.png") center/contain no-repeat;
 	}
+
+	.cd1-front{
+		background: url("../img/cd/cd_front_01_48x48.jpg") center/contain no-repeat;
+	}
+
+	.cd2-front{
+		background: url("../img/cd/cd_front_02_48x48.jpg") center/contain no-repeat;
+	}
+
+	.cd3-front{
+		background: url("../img/cd/cd_front_03_48x48.jpg") center/contain no-repeat;
+	}
+
+	.cd4-front{
+		background: url("../img/cd/cd_front_04_48x48.jpg") center/contain no-repeat;
+	}
+
+	.cd5-front{
+		background: url("../img/cd/cd_front_05_48x48.jpg") center/contain no-repeat;
+	}
+
+	.cd-back{
+		background: url("../img/cd/cd_back_48x48.png") center/contain no-repeat;
+	}
 }
 
 @media screen and (orientation: portrait) and (min-width:481px) and (max-width: 960px),
@@ -252,6 +347,30 @@
 	.cpu-back{
 		background: url("../img/cpu/cpu_back_148x172.png") center/contain no-repeat;
 	}
+
+	.cd1-front{
+		background: url("../img/cd/cd_front_01_96x96.jpg") center/contain no-repeat;
+	}
+
+	.cd2-front{
+		background: url("../img/cd/cd_front_02_96x96.jpg") center/contain no-repeat;
+	}
+
+	.cd3-front{
+		background: url("../img/cd/cd_front_03_96x96.jpg") center/contain no-repeat;
+	}
+
+	.cd4-front{
+		background: url("../img/cd/cd_front_04_96x96.jpg") center/contain no-repeat;
+	}
+
+	.cd5-front{
+		background: url("../img/cd/cd_front_05_96x96.jpg") center/contain no-repeat;
+	}
+
+	.cd-back{
+		background: url("../img/cd/cd_back_96x96.png") center/contain no-repeat;
+	}
 }
 
 @media screen and (orientation: portrait) and (min-width: 961px),
@@ -279,5 +398,28 @@
 
 	.cpu-back{
 		background: url("../img/cpu/cpu_back_296x344.png") center/contain no-repeat;
+	}
+	.cd1-front{
+		background: url("../img/cd/cd_front_01_192x192.jpg") center/contain no-repeat;
+	}
+
+	.cd2-front{
+		background: url("../img/cd/cd_front_02_192x192.jpg") center/contain no-repeat;
+	}
+
+	.cd3-front{
+		background: url("../img/cd/cd_front_03_192x192.jpg") center/contain no-repeat;
+	}
+
+	.cd4-front{
+		background: url("../img/cd/cd_front_04_192x192.jpg") center/contain no-repeat;
+	}
+
+	.cd5-front{
+		background: url("../img/cd/cd_front_05_192x192.jpg") center/contain no-repeat;
+	}
+
+	.cd-back{
+		background: url("../img/cd/cd_back_192x192.png") center/contain no-repeat;
 	}
 }

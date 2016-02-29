@@ -1,79 +1,67 @@
-@keyframes CPUReveal{
-	from{
-		opacity: 0;
-		transform: scale(0);
-	}
-	to{
-		opacity: 1;
-		transform: scale(1);
-	}
-}
-
-@keyframes CPUFrontRotateAndScale{
-	from{
-		transform: rotate3d(1,0,0,0deg) scale(1);
-	}
-
-	25%{
-		transform: rotate3d(1,0,0,180deg) scale(1.4,1.2);
-	}
-
-	49.99999%{
-		transform: rotate3d(1,0,0,360deg) scale(1);
-	}
-
-	50%{
-		transform: rotate3d(0,1,0,0deg) scale(1);
-	}
-
-	75%{
-		transform: rotate3d(0,1,0,180deg) scale(1.4,1.2);
-	}
-
-	to{
-		transform: rotate3d(0,1,0,360deg) scale(1);
-	}
-}
-
-@keyframes CPUBackRotateAndScale{
-	from{
-		transform: rotate3d(1,0,0,180deg) scale(1);
-	}
-
-	25%{
-		transform: rotate3d(1,0,0,360deg) scale(1.4,1.2);
-	}
-
-	49.99999%{
-		transform: rotate3d(1,0,0,540deg) scale(1);
-	}
-
-	50%{
-		transform: rotate3d(0,1,0,180deg) scale(1);
-	}
-
-	75%{
-		transform: rotate3d(0,1,0,360deg) scale(1.4,1.2);
-	}
-
-	to{
-		transform: rotate3d(0,1,0,540deg) scale(1);
-	}
-}
-
-@keyframes rotateAnim{
-
-	from{
-		transform: rotate3d(0,1,0,0deg);
-	}
-
-	to{
-		transform: rotate3d(0,1,0,360deg);
-	}
-
-}
-
 @media screen and (orientation: landscape){
+
+	@keyframes CPUReveal{
+		from{
+			opacity: 0;
+			transform: scale(0);
+		}
+		to{
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	@keyframes CPUFrontRotateAndScale{
+		from{
+			transform: rotate3d(1,0,0,0deg) scale(1);
+		}
+
+		25%{
+			transform: rotate3d(1,0,0,180deg) scale(1.4,1.2);
+		}
+
+		49.99999%{
+			transform: rotate3d(1,0,0,360deg) scale(1);
+		}
+
+		50%{
+			transform: rotate3d(0,1,0,0deg) scale(1);
+		}
+
+		75%{
+			transform: rotate3d(0,1,0,180deg) scale(1.4,1.2);
+		}
+
+		to{
+			transform: rotate3d(0,1,0,360deg) scale(1);
+		}
+	}
+
+	@keyframes CPUBackRotateAndScale{
+		from{
+			transform: rotate3d(1,0,0,180deg) scale(1);
+		}
+
+		25%{
+			transform: rotate3d(1,0,0,360deg) scale(1.4,1.2);
+		}
+
+		49.99999%{
+			transform: rotate3d(1,0,0,540deg) scale(1);
+		}
+
+		50%{
+			transform: rotate3d(0,1,0,180deg) scale(1);
+		}
+
+		75%{
+			transform: rotate3d(0,1,0,360deg) scale(1.4,1.2);
+		}
+
+		to{
+			transform: rotate3d(0,1,0,540deg) scale(1);
+		}
+	}
 
 	@keyframes moveAndRotateMotherboardFront{
 		from{
@@ -162,9 +150,92 @@
 			transform: translate(134vw,12vh) rotate3d(0,1,0,-1620deg);
 		}
 	}
+
+	@keyframes CDFrontMoveAndRotate{
+		from{
+			transform: translateY(0vh) rotate3d(0,1,0,0deg);
+		}
+		to{
+			transform: translateY(110vh) rotate3d(0,1,0,2160deg);
+		}
+	}
+
+	@keyframes CDBackMoveAndRotate{
+		from{
+			transform: translateY(0vh) rotate3d(0,1,0,180deg);
+		}
+		to{
+			transform: translateY(110vh) rotate3d(0,1,0,2340deg);
+		}
+	}
+
 }
 
 @media screen and (orientation: portrait){
+
+	@keyframes CPUReveal{
+		from{
+			opacity: 0;
+			transform: scale(0) rotate(90deg);
+		}
+		to{
+			opacity: 1;
+			transform: scale(1) rotate(90deg);
+		}
+	}
+
+	@keyframes CPUFrontRotateAndScale{
+		from{
+			transform: rotate3d(1,0,0,0deg) scale(1) rotate(90deg);
+		}
+
+		25%{
+			transform: rotate3d(1,0,0,180deg) scale(1.4,1.2) rotate(90deg);
+		}
+
+		49.99999%{
+			transform: rotate3d(1,0,0,360deg) scale(1) rotate(90deg);
+		}
+
+		50%{
+			transform: rotate3d(0,1,0,0deg) scale(1) rotate(90deg);
+		}
+
+		75%{
+			transform: rotate3d(0,1,0,180deg) scale(1.4,1.2) rotate(90deg);
+		}
+
+		to{
+			transform: rotate3d(0,1,0,360deg) scale(1) rotate(90deg);
+		}
+	}
+
+	@keyframes CPUBackRotateAndScale{
+		from{
+			transform: rotate3d(1,0,0,180deg) scale(1) rotate(90deg);
+		}
+
+		25%{
+			transform: rotate3d(1,0,0,360deg) scale(1.4,1.2) rotate(90deg);
+		}
+
+		49.99999%{
+			transform: rotate3d(1,0,0,540deg) scale(1) rotate(90deg);
+		}
+
+		50%{
+			transform: rotate3d(0,1,0,180deg) scale(1) rotate(90deg);
+		}
+
+		75%{
+			transform: rotate3d(0,1,0,360deg) scale(1.4,1.2) rotate(90deg);
+		}
+
+		to{
+			transform: rotate3d(0,1,0,540deg) scale(1) rotate(90deg);
+		}
+	}
+
 	@keyframes moveAndRotateMotherboardFront{
 		from{
 			transform:translate(-12vw,0) rotate3d(1,0,0,0deg) rotate(90deg);
@@ -252,4 +323,23 @@
 			transform: translate(12vw,134vh) rotate3d(1,0,0,-1620deg) rotate(90deg);
 		}
 	}
+
+	@keyframes CDFrontMoveAndRotate{
+		from{
+			transform: translateX(0vw) rotate3d(1,0,0,0deg);
+		}
+		to{
+			transform: translateX(-110vw) rotate3d(1,0,0,2160deg);
+		}
+	}
+
+	@keyframes CDBackMoveAndRotate{
+		from{
+			transform: translateX(0vw) rotate3d(1,0,0,180deg);
+		}
+		to{
+			transform: translateX(-110vw) rotate3d(1,0,0,2340deg);
+		}
+	}
+
 }
